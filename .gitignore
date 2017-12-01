@@ -3,3 +3,6 @@
 ################################################################################
 
 /CustomerManager/.vs/CustomerManager/v15
+/.vs/slnx.sqlite
+/CustomerManager/CustomerManager.API/CustomerManager.ldf
+/CustomerManager/CustomerManager.API/CustomerManager.mdf

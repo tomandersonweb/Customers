@@ -1,0 +1,11 @@
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\bin\Debug\netcoreapp2.0\CustomerManager.Interfaces.deps.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\bin\Debug\netcoreapp2.0\CustomerManager.Interfaces.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\bin\Debug\netcoreapp2.0\CustomerManager.Interfaces.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\bin\Debug\netcoreapp2.0\CustomerManager.Models.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\bin\Debug\netcoreapp2.0\CustomerManager.Models.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\obj\Debug\netcoreapp2.0\CustomerManager.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\obj\Debug\netcoreapp2.0\CustomerManager.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\obj\Debug\netcoreapp2.0\CustomerManager.Interfaces.AssemblyInfoInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\obj\Debug\netcoreapp2.0\CustomerManager.Interfaces.AssemblyInfo.cs
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\obj\Debug\netcoreapp2.0\CustomerManager.Interfaces.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Interfaces\obj\Debug\netcoreapp2.0\CustomerManager.Interfaces.pdb

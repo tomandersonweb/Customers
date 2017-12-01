@@ -1,0 +1,13 @@
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Persistence.deps.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Persistence.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Persistence.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Interfaces.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Models.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Interfaces.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\bin\Debug\netcoreapp2.0\CustomerManager.Models.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\obj\Debug\netcoreapp2.0\CustomerManager.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\obj\Debug\netcoreapp2.0\CustomerManager.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\obj\Debug\netcoreapp2.0\CustomerManager.Persistence.AssemblyInfoInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\obj\Debug\netcoreapp2.0\CustomerManager.Persistence.AssemblyInfo.cs
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\obj\Debug\netcoreapp2.0\CustomerManager.Persistence.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Persistence\obj\Debug\netcoreapp2.0\CustomerManager.Persistence.pdb

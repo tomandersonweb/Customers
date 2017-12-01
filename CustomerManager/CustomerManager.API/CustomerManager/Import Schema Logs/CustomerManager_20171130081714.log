@@ -1,0 +1,82 @@
+30/11/2017 20:17:14	This log contains information about the import schema operation into project 'CustomerManager' on computer 'DESKTOP-EK9FD6E' by user 'Tom'.
+30/11/2017 20:17:15	Import of database schema has started.
+30/11/2017 20:17:51	Gathering database credentials
+30/11/2017 20:17:51	Gathering database options
+30/11/2017 20:17:51	Gathering users
+30/11/2017 20:17:51	Gathering roles
+30/11/2017 20:17:51	Gathering application roles
+30/11/2017 20:17:51	Gathering role memberships
+30/11/2017 20:17:51	Gathering filegroups
+30/11/2017 20:17:51	Gathering full-text catalogs
+30/11/2017 20:17:51	Gathering assemblies
+30/11/2017 20:17:51	Gathering certificates
+30/11/2017 20:17:52	Gathering asymmetric keys
+30/11/2017 20:17:52	Gathering symmetric keys
+30/11/2017 20:17:52	Gathering encrypted symmetric keys
+30/11/2017 20:17:52	Gathering schemas
+30/11/2017 20:17:52	Gathering XML schema collections
+30/11/2017 20:17:52	Gathering user-defined data types
+30/11/2017 20:17:52	Gathering user-defined types
+30/11/2017 20:17:52	Gathering table types
+30/11/2017 20:17:52	Gathering unique keys for table types
+30/11/2017 20:17:52	Gathering primary keys for table types
+30/11/2017 20:17:52	Gathering indexes for table types
+30/11/2017 20:17:52	Gathering check constraints for table types
+30/11/2017 20:17:52	Gathering default constraints for table types
+30/11/2017 20:17:52	Gathering partition functions
+30/11/2017 20:17:52	Gathering partition schemes
+30/11/2017 20:17:52	Gathering functions
+30/11/2017 20:17:52	Gathering encrypted functions
+30/11/2017 20:17:52	Gathering aggregates
+30/11/2017 20:17:52	Gathering procedures
+30/11/2017 20:17:52	Gathering encrypted procedures
+30/11/2017 20:17:52	Gathering tables
+30/11/2017 20:17:52	Gathering primary keys
+30/11/2017 20:17:52	Gathering unique constraints
+30/11/2017 20:17:52	Gathering foreign keys
+30/11/2017 20:17:52	Gathering default constraints
+30/11/2017 20:17:52	Gathering check constraints
+30/11/2017 20:17:52	Gathering views
+30/11/2017 20:17:52	Gathering encrypted views
+30/11/2017 20:17:52	Gathering indexes
+30/11/2017 20:17:52	Gathering statistics
+30/11/2017 20:17:52	Gathering full-text index stoplists
+30/11/2017 20:17:52	Gathering search property lists
+30/11/2017 20:17:52	Gathering search properties
+30/11/2017 20:17:52	Gathering full-text indexes
+30/11/2017 20:17:52	Gathering column store indexes
+30/11/2017 20:17:52	Gathering spatial indexes
+30/11/2017 20:17:52	Gathering XML indexes
+30/11/2017 20:17:52	Gathering Selective XML indexes
+30/11/2017 20:17:59	Gathering encrypted triggers
+30/11/2017 20:17:59	Gathering triggers
+30/11/2017 20:17:59	Gathering encrypted and clr ddl triggers
+30/11/2017 20:17:59	Gathering ddl triggers
+30/11/2017 20:17:59	Gathering synonyms
+30/11/2017 20:17:59	Gathering defaults
+30/11/2017 20:17:59	Gathering data constraint uddt bindings
+30/11/2017 20:17:59	Gathering rules
+30/11/2017 20:17:59	Gathering data constraint uddt bindings
+30/11/2017 20:17:59	Gathering message types
+30/11/2017 20:17:59	Gathering queues
+30/11/2017 20:17:59	Gathering contracts
+30/11/2017 20:17:59	Gathering services
+30/11/2017 20:17:59	Gathering event notifications
+30/11/2017 20:17:59	Gathering remote service bindings
+30/11/2017 20:17:59	Gathering broker priorities
+30/11/2017 20:17:59	Gathering signatures
+30/11/2017 20:17:59	Gathering data compression options
+30/11/2017 20:17:59	Gathering sequence types
+30/11/2017 20:17:59	Gathering security policies
+30/11/2017 20:17:59	Gather column encryption keys
+30/11/2017 20:17:59	Gathering column master keys
+30/11/2017 20:17:59	Gathering external data sources
+30/11/2017 20:17:59	Gathering external file formats
+30/11/2017 20:17:59	Gathering external tables
+30/11/2017 20:17:59	Gathering extended properties
+30/11/2017 20:18:00	Gathering credentials
+30/11/2017 20:18:00	Gathering logins
+30/11/2017 20:18:00	Gathering server audits
+30/11/2017 20:18:06	Finished importing database.
+30/11/2017 20:18:06	A summary of the import was saved to the following location: C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.API\CustomerManager\Import Schema Logs\CustomerManager_20171130081714.log
+30/11/2017 20:18:06	Click Finish to continue...

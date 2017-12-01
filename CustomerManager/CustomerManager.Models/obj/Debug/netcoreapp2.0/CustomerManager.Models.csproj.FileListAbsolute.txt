@@ -1,0 +1,9 @@
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\bin\Debug\netcoreapp2.0\CustomerManager.Models.deps.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\bin\Debug\netcoreapp2.0\CustomerManager.Models.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\bin\Debug\netcoreapp2.0\CustomerManager.Models.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\obj\Debug\netcoreapp2.0\CustomerManager.Models.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\obj\Debug\netcoreapp2.0\CustomerManager.Models.AssemblyInfoInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\obj\Debug\netcoreapp2.0\CustomerManager.Models.AssemblyInfo.cs
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\obj\Debug\netcoreapp2.0\CustomerManager.Models.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\obj\Debug\netcoreapp2.0\CustomerManager.Models.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Models\obj\Debug\netcoreapp2.0\CustomerManager.Models.csprojResolveAssemblyReference.cache
