@@ -1,0 +1,16 @@
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\obj\Debug\netcoreapp2.0\CustomerManager.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\obj\Debug\netcoreapp2.0\CustomerManager.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\obj\Debug\netcoreapp2.0\CustomerManager.Tests.AssemblyInfoInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\obj\Debug\netcoreapp2.0\CustomerManager.Tests.AssemblyInfo.cs
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Tests.deps.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Tests.runtimeconfig.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Tests.runtimeconfig.dev.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Tests.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Tests.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Models.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\bin\Debug\netcoreapp2.0\CustomerManager.Models.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\obj\Debug\netcoreapp2.0\CustomerManager.Tests.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Tests\obj\Debug\netcoreapp2.0\CustomerManager.Tests.pdb

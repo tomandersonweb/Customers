@@ -5,13 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="customers.sqlite" />
+    <Compile Remove="CustomerManager\**" />
+    <Content Remove="CustomerManager\**" />
+    <EmbeddedResource Remove="CustomerManager\**" />
+    <None Remove="CustomerManager\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Customers.sqlite">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Remove="customers.sqlite" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,23 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\app.js" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CustomerManager.Interfaces\CustomerManager.Interfaces.csproj" />
     <ProjectReference Include="..\CustomerManager.Persistence\CustomerManager.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\Index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\dist\js\" />
-    <Folder Include="wwwroot\lib\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

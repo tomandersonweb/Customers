@@ -13,45 +13,124 @@ namespace CustomerManager.Persistence
 {
     public class CustomerRepository : ICustomerRepository
     {
+        private string ConnString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Environment.CurrentDirectory}\\CustomerManager.mdf;Integrated Security=True;Connect Timeout=30";
+
         public void AddCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            string sql = "INSERT INTO Customers " +
+                "([FirstName],[LastName],[PreviouslyOrdered],[WebCustomer],[DateActive],[IsPalindrome]) " +
+                "Values (@FirstName,@LastName,@PreviouslyOrdered,@WebCustomer,@DateActive,@IsPalindrome);" +
+                "SELECT CAST(SCOPE_IDENTITY() as int)";
+
+            using (var cnn = new SqlConnection(ConnString))
+            {
+                cnn.Open();
+
+                var id = cnn.Query<int>(sql, customer).Single();
+
+                foreach (var colour in customer.FavouriteColours)
+                {
+                    sql = @"Insert into CustomerColours (CustomerId, ColourId) values (@CustomerId, @ColourId); ";
+
+                    cnn.Execute(sql, new { CustomerId = id, ColourId = colour.Id });
+                }
+
+            }
         }
 
-        public void DeleteCustomer(Guid id)
+        public void DeleteCustomer(int id)
         {
-            throw new NotImplementedException();
+            using (var cnn = new SqlConnection(ConnString))
+            {
+                var sql = @"DELETE from Customers where Id = @CustomerId";
+
+                cnn.Open();
+
+                cnn.Execute(sql, new { CustomerId = id });
+
+                sql = @"DELETE from CustomerColours where CustomerId = @CustomerId";
+
+                cnn.Execute(sql, new { CustomerId = id });
+            }
         }
 
         public void EditCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            using (var cnn = new SqlConnection(ConnString))
+            {
+                // update the customer first 
+                string sql = "UPDATE Customers " +
+                    "SET FirstName = @FirstName, " +
+                    "LastName = @LastName, " +
+                    "PreviouslyOrdered = @PreviouslyOrdered,  " +
+                    "WebCustomer = @WebCustomer, " +
+                    "DateActive = @DateActive," +
+                    "IsPalindrome = @IsPalindrome " +
+                    "WHERE Id = @Id ;";
+                cnn.Open();
+
+                cnn.Execute(sql, customer);
+
+                sql = @"DELETE from CustomerColours where CustomerId = @CustomerId";
+
+                cnn.Execute(sql, new { CustomerId = customer.Id });
+
+                foreach (var colour in customer.FavouriteColours)
+                {
+                    sql = @"Insert into CustomerColours (CustomerId, ColourId) values (@CustomerId, @ColourId); ";
+
+                    cnn.Execute(sql, new { CustomerId = customer.Id, ColourId = colour.Id });
+                }
+
+            }
         }
 
-        public IEnumerable<Customer> GetAllCustomers()
+        public async Task<IEnumerable<Customer>> GetAllCustomers(int pageNo = 1, int pageSize = 20, string orderByColumn = "DateActive")
         {
             IEnumerable<Customer> result;
+            IEnumerable<Colour> colours;
 
-            using (var cnn = new SqlConnection($"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Environment.CurrentDirectory}\\CustomerManager.mdf;Integrated Security=True;Connect Timeout=30"))
+            using (var cnn = new SqlConnection(ConnString))
             {
                 cnn.Open();
 
-                result = cnn.Query<Customer, List<int>, Customer>(@"select c.*, cc.colourid  from customers c inner join customercolours cc on c.Id = cc.customerid "
-                    , (cust, cols) => { cust.FavouriteColours = cols; return cust; });
+                colours = await cnn.QueryAsync<Colour>(@"select * from colours");
+
+                result = await cnn.QueryAsync<Customer, string, Customer>(@"
+                    SELECT top (20) c.*,
+                    (STUFF((SELECT ',' + CONVERT(varchar(10), cc.colourid )
+                                FROM customercolours cc WHERE cc.customerid = c.id
+                                FOR XML PATH('')) ,1,1,'') )AS colours
+                    FROM customers c
+                    ORDER by DateActive desc ; ", 
+                    (cust, cols) => {
+                        cust.FavouriteColours = string.IsNullOrEmpty(cols) ? new List<Colour>() : colours?.Where(c => cols.Split(',').Select(x => int.Parse(x.ToString())).ToList().Contains(c.Id)).ToList()  ;
+                        return cust;
+                    }, splitOn:"colours");
 
             }
 
             return result;
         }
 
-        public Customer GetCustomer(int id)
+        public async Task<Customer> GetCustomer(int id)
         {
             Customer result;
+            IEnumerable<Colour> colours;
 
-            using (var cnn = new SqlConnection($"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={Environment.CurrentDirectory}\\CustomerManager.mdf;Integrated Security=True;Connect Timeout=30"))
+            using (var cnn = new SqlConnection(ConnString))
             {
                 cnn.Open();
-                result = Task.Run(async () => await cnn.QuerySingleOrDefaultAsync<Customer>(@"SELECT * FROM Customers where Id = @Id", new { Id = id })).Result;
+
+                colours = await cnn.QueryAsync<Colour>(@"select c.* from colours c inner join CustomerColours cc on c.Id = cc.ColourId where cc.CustomerId = @CustomerId", new { CustomerId = id });
+
+                result = await cnn.QuerySingleOrDefaultAsync<Customer>(@"
+                    SELECT c.*
+                    FROM customers c 
+                    WHERE c.Id = @CustomerId ;"
+                    ,
+                    new { CustomerId = id });
+                result.FavouriteColours = colours.ToList();
             }
 
             return result;

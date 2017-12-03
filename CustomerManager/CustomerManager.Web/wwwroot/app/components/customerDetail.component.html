@@ -1,0 +1,40 @@
+﻿<h2>{{model.action}} Customer</h2>
+<form  ng-model="model.customer">
+    <table class="table table-bordered">
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" ng-model="model.customer.firstName" required/></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" ng-model="model.customer.lastName" required/></td>
+        </tr>
+        <tr>
+            <td>Previously Ordered</td>
+            <td><input type="checkbox" ng-model="model.customer.previouslyOrdered" /></td>
+        </tr>
+        <tr>
+            <td>Web Customer</td>
+            <td><input type="checkbox" ng-model="model.customer.webCustomer" /></td>
+        </tr>
+        <tr>
+            <td>Date Active</td>
+            <td><input type="date" ng-model="model.customer.dateActive" required/></td>
+        </tr>
+        <tr>
+            <td>Favourite Colours</td>
+            <td>
+                <input type="checkbox" ng-model="model.red"> Red<br />
+                <input type="checkbox" ng-model="model.green"> Green<br />
+                <input type="checkbox" ng-model="model.blue"> Blue
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button class="btn btn-default" ng-click="model.save()" >Submit</button>
+            </td>
+        </tr>
+    </table>
+
+</form>

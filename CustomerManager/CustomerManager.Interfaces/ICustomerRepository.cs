@@ -2,19 +2,20 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CustomerManager.Interfaces
 {
     public interface ICustomerRepository
     {
-        IEnumerable<Customer> GetAllCustomers();
+        Task<IEnumerable<Customer>> GetAllCustomers(int pageNo = 1, int pageSize = 20, string orderByColumn = "DateActive");
 
-        Customer GetCustomer(int id);
+        Task<Customer> GetCustomer(int id);
 
         void EditCustomer(Customer customer);
 
         void AddCustomer(Customer customer);
 
-        void DeleteCustomer(Guid id);
+        void DeleteCustomer(int id);
     }
 }

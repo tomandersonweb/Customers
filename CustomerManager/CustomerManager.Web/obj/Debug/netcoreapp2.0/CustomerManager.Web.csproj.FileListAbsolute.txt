@@ -1,0 +1,11 @@
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\bin\Debug\netcoreapp2.0\CustomerManager.Web.deps.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\bin\Debug\netcoreapp2.0\CustomerManager.Web.runtimeconfig.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\bin\Debug\netcoreapp2.0\CustomerManager.Web.runtimeconfig.dev.json
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\bin\Debug\netcoreapp2.0\CustomerManager.Web.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\bin\Debug\netcoreapp2.0\CustomerManager.Web.pdb
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\obj\Debug\netcoreapp2.0\CustomerManager.Web.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\obj\Debug\netcoreapp2.0\CustomerManager.Web.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\obj\Debug\netcoreapp2.0\CustomerManager.Web.AssemblyInfoInputs.cache
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\obj\Debug\netcoreapp2.0\CustomerManager.Web.AssemblyInfo.cs
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\obj\Debug\netcoreapp2.0\CustomerManager.Web.dll
+C:\Users\Tom\Source\Repos\Customers\CustomerManager\CustomerManager.Web\obj\Debug\netcoreapp2.0\CustomerManager.Web.pdb

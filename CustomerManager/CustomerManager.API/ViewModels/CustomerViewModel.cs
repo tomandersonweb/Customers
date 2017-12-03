@@ -9,6 +9,11 @@ namespace CustomerManager.API.ViewModels
 {
     public class CustomerViewModel
     {
+        public CustomerViewModel()
+        {
+            FavouriteColours = new List<Colour>();
+        }
+
         public int Id { get; set; }
 
         public string Name => FirstName + " " + LastName;
@@ -26,8 +31,8 @@ namespace CustomerManager.API.ViewModels
         [Required]
         public DateTime DateActive { get; set; }
 
-        public bool IsPalindrome => Name.ToCharArray() == Name.ToCharArray().Reverse();
+        public bool IsPalindrome => (FirstName + LastName).ToLower().SequenceEqual((FirstName + LastName).ToLower().Reverse());
 
-        public List<Colour> FavouriteColours { get; set; }
+        public IList<Colour> FavouriteColours { get; set; }
     }
 }

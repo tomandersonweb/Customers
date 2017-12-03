@@ -27,6 +27,7 @@ namespace CustomerManager.API
         {
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddMvc();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,8 +38,14 @@ namespace CustomerManager.API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(corsPolicyBuilder =>
+               corsPolicyBuilder.WithOrigins("http://localhost:50856")
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+            );
+            //app.UseCors("AllowAll");
             app.UseMvc();
-            app.UseStaticFiles();
+
         }
     }
 }

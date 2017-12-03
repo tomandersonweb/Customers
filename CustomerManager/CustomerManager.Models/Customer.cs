@@ -8,7 +8,7 @@ namespace CustomerManager.Models
     {
         public Customer ()
         {
-            FavouriteColours = new List<int>();
+            FavouriteColours = new List<Colour>();
         }
         public int Id { get; set; } 
 
@@ -24,8 +24,8 @@ namespace CustomerManager.Models
 
         public DateTime DateActive { get; set; }
 
-        public bool IsPalindrome => Name.ToCharArray() == Name.ToCharArray().Reverse();
+        public bool IsPalindrome => (FirstName + LastName).ToLower().SequenceEqual((FirstName + LastName).ToLower().Reverse());
 
-        public IList<int> FavouriteColours { get; set; }
+        public IList<Colour> FavouriteColours { get; set; }
     }
 }
